@@ -1,4 +1,4 @@
-FROM harbor.cicd.s15m.nl/rws-dso-docker-hub/library/alpine:3.15
+FROM alpine:3
 
 RUN apk add --update --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/community buildah cni-plugins runc iptables ip6tables 
 COPY conf/* /etc/containers/
